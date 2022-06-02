@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import useBookSearch from '../hooks/useBookSearch';
+import useBookSearch from '../../hooks/useBookSearch';
 // import useBookSearchWithAxios from '../hooks/useBookSearchWithAxios';
 import Search from './Search';
 import ResultList from './ResultList';
@@ -18,7 +18,7 @@ export default function Books() {
   // } = useBookSearchWithAxios(query, pageNumber);
 
   return (
-    <>
+    <div className='booksPage'>
       <Search
         query={query}
         setQuery={setQuery}
@@ -34,6 +34,6 @@ export default function Books() {
         setPageNumber={setPageNumber}
       />
       <div>{error && 'ERROR'}</div>
-    </>
+    </div>
   );
 }

@@ -34,7 +34,7 @@ export default function ResultList ({
           </div>;
         }
       })}
-      <div>{loading && 'LOADING...'}</div>
+      <div><strong>{loading && 'LOADING...'}</strong></div>
     </>
   );
 

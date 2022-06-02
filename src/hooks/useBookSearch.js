@@ -25,6 +25,8 @@ export default function useBookSearch (query, pageNumber) {
     const options = {
       method: 'GET',
       signal: controller.signal
+      // mode: 'cors'
+      // credentials: 'omit'
     };
     fetch(`${BOOKS_URL}?${queryParams}`, options)
       .then(response => response.json())
